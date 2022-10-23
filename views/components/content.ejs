@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+	<a class="navbar-brand" href="/">
+		<svg width="120" height="40">
+			<circle cx="60" cy="20" r="60" style="fill:rgba(255, 193, 7,0.8);"></circle>
+			<text x="60" y="28" style="font-size:20px;text-anchor:middle;">Me</text>
+		</svg>
+	</a>
+	<a class="nav-link  <% if(nav_current == 'login'){ %> active <% } %>"  href="/auth/login">Login</a>
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse flexreverse" id="navbarNavAltMarkup" style="float:left">
+	  <div class="navbar-nav">
+		<a class="nav-link  <% if(nav_current == 'home'){ %> active <% } %>" aria-current="page" href="/">Home</a>
+		<a class="nav-link  <% if(nav_current == 'services'){ %> active <% } %>" href="/services">Services</a>
+		<a class="nav-link  <% if(nav_current == 'projects'){ %> active <% } %>" href="/projects">Projects</a>
+		<a class="nav-link  <% if(nav_current == 'contact'){ %> active <% } %>" href="/contact">Contact</a>
+		<a class="nav-link  <% if(nav_current == 'aboutme'){ %> active <% } %>" href="/aboutme">About Me</a>
+	  </div>
+	</div>
+  </div>
+</nav>

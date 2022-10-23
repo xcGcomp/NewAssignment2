@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <%- include('./components/header.ejs',{title: 'contact'}); %>
+  <body>
+	  <div class="container">
+		  <%- include('./components/content.ejs',{nav_current: 'contact'}); %>
+		  <div class="content">
+			  <h3>Contact me</h3>
+			  <form id="form">
+				  <div class="mb-3">
+				    <label for="email" class="form-label">Your Email</label>
+				    <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com">
+				  </div>
+				  <div class="mb-3">
+				    <label for="phone" class="form-label">Your Phone</label>
+				    <input type="text" name="phone" class="form-control" id="phone" placeholder="Your Phone">
+				  </div>
+				  <div class="mb-3">
+				    <label for="firstName" class="form-label">Your First Name</label>
+				    <input type="text" name="firstName"  class="form-control" id="firstName" placeholder="Your First Name">
+				  </div>
+				  <div class="mb-3">
+				    <label for="lastName" class="form-label">Your Last Name</label>
+				    <input type="text" name="lastName"  class="form-control" id="lastName" placeholder="Your Last Name">
+				  </div>
+				  <div class="mb-3">
+				    <label for="content" class="form-label">Your Message</label>
+				    <textarea class="form-control" name="content" id="content" rows="3"></textarea>
+				  </div>
+				  
+			  </form>
+			  <div  class="mb-3">
+			  	 <button type="buttom" id="submit" class="btn btn-info">submit</button>
+			  </div>
+		  </div>
+		  <%- include('./components/footer.ejs') %>
+	  </div>
+	  <!-- JavaScript Bundle with Popper -->
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	  <script src="/javascripts/index.js"/></script>
+  </body>
+</html>

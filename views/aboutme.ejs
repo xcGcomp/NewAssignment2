@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <%- include('./components/header.ejs',{title: 'aboutme'}); %>
+  <body>
+	  <div class="container">
+		  <%- include('./components/content.ejs',{nav_current: 'aboutme'}); %>
+		  <div class="content">
+			  <h3>Contact me</h3>
+			  <div class="aboutme">
+				  <div>
+						<img class="auto" src="/images/avatar.webp" />
+				  </div>
+				  <div class="aboutme2">
+				  		<ul class="list-group list-group-numbered">
+				  		  <li class="list-group-item d-flex justify-content-between align-items-start">
+				  		    <div class="ms-2 me-auto">
+				  		      <div class="fw-bold">Name</div>
+				  		      Xuecen Guo
+				  		    </div>
+				  		  </li>
+				  		  <li class="list-group-item d-flex justify-content-between align-items-start">
+				  		    <div class="ms-2 me-auto">
+				  		      <div class="fw-bold"></div>
+				  		      I am Xuecen Guo, born and brought up in China. Thank you for allowing me to introduce myself. 
+				  		      
+				  		      I believe my strength is my attitude, and I like to take up challenges and think to accept both success and failure in a balanced way to move forward. I want to say that I don't leave any questions altogether as I believe in myself and my work.
+				  		      
+				  		      My short-term goal is to finish my study in Centennial college. And my long-term goal is to be a good software engineer in Toronto. Therefore, I always challenge myself to improve my progress and steady growth.
+				  		      
+				  		      That's all about me. Thank you for providing me with such an excellent opportunity to introduce myself.
+				  		    </div>
+				  		  </li>
+						  <div style="line-height:3em;"><a href="/resume">My Resume PDF</a></div>
+				  		</ul>	
+				  </div>
+			  </div>
+		  </div>
+		  <%- include('./components/footer.ejs') %>
+	  </div>
+	  <!-- JavaScript Bundle with Popper -->
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
